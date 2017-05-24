@@ -1,6 +1,6 @@
 [submodule "kitra-com-lib"]
 	path = kitra-com-lib
-	url = https://github.com/rushup/kitra-com-lib.git
+	url = https://github.com/rushup/kitra-com-test-mic.git
 [submodule "faeppcom"]
 	path = faeppcom
 	url = https://faeplusplus_matteo_fumagalli@bitbucket.org/faeplusplus/faeppcom.git

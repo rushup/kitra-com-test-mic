@@ -66,6 +66,11 @@ tcsetattr (fd, TCSANOW | TCSAFLUSH, &options) ;
 
 ioctl (fd, TIOCMGET, &status);
 
+struct serial_struct serinfo;
+ioctl (fd, TIOCGSERIAL, &serinfo);
+serinfo.flags |= ASYNC_LOW_LATENCY;
+ioctl (fd, TIOCSSERIAL, &serinfo);
+
 status |= TIOCM_DTR ;
 status |= TIOCM_RTS ;
 
